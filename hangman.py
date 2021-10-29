@@ -30,7 +30,7 @@ def check_letter(word, guess, guess_letter, current_round):
     if current_round == 6:
         print("\nYou lose! The word was " + word)
         return 1
-    # return round to add one if the user is wrong otherwise it will add 0
+    # return round to add one if the user is wrong otherwise it will add 
     return add_round 
 
 
