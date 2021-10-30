@@ -1,5 +1,5 @@
 
-#need to go over program and add elif as well as any nested if statements as needed
+#need to go over program and add elif as well as any nested if statements or simplification of staements as needed
 def check_letter(word, guess, guess_letter, current_round):
     guessed_char = ""
     #add round is set up to notify main if the user guesses wrong add a round to current round
