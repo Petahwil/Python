@@ -14,7 +14,7 @@ def inner_factorial(number):
     return multiply(number, inner_factorial(number - 1))  # <- change is in here.
 
     # Using debugging you can see how this program runs and how the encapslated function does recursion. 
-    # This program starts by running inner_factorial. There is a Call Stack the runs with the program.
+    # This program starts by running inner_factorial. There is a Call Stack that runs with the program.
     # The Call Stack is the stack data structure that stores information about the active subroutines 
     # of a computer program. The Call Stack is important because each task can have it’s own separate stack.
     # This means that each function called can be active simultaneously for different tasks doing different things.
