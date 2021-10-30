@@ -29,12 +29,7 @@ def inner_factorial(number):
     # multiply(number(5 popped off the call stack), return 4*6 from multiply (24))
     # return the last multiplication 5*24 which is the factorial of 5 = 120
 
-# multiplying 2 with 1.
-# multiplying 3 with 2.
-# multiplying 4 with 6.
-# 24
-
-inner_factorial(4)
+inner_factorial(5)
 
 # The above program is a deep explination of what is happening below.
 
