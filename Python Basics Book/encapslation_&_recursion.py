@@ -20,7 +20,7 @@ def inner_factorial(number):
     # This means that each function called can be active simultaneously for different tasks doing different things.
     # Another advantage is that a Call Stack supports recursive calls automatically. Python pushes the 
     # inner_factorial ever time it is run till it reaches one onto the Call Stack. The Stack Looks like 2 3 4 5.
-    # Once the if statement returns 1 the programs moves on the the recursive call multiply(number, inner_factorial(number - 1)).
+    # Once the if statement returns 1 the programs moves on to the recursive call multiply(number, inner_factorial(number - 1)).
     # In this call number is filled with the call stack and inner_factorial(number - 1) is filled with the return of a*b.
     # Python then pops off the stack one at a time. Starting with 2 the program then multiplys 2 with (2-1). The stack then shift up 
     # and recursivly moves through the stack one by one till nothing is left then the program ends. So the next step would be
