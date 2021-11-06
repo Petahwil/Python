@@ -15,7 +15,6 @@ def make_poem():
     # loop over the poem format list and if it matches any of the randoms that need to be
     # choosen then choose and replace the old value.
     for i in range(len(poem_format)):
-    #print(poem_format[i].find('verb'))
         if poem_format[i] == 'A/An':
             poem_format[i] = choice(['A','An'])
         if poem_format[i].find('noun') == 0:
