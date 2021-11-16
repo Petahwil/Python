@@ -1,35 +1,3 @@
-# class BikeRating:
-#     def bikeRating(self,bike):
-#         print('Rating Bikes')
-#         print('===================')     
-#         for bike in bike:
-#             print(f'{bike.bikeRating()}')
-
-# class Bike:
-#     wheels = 'two'
-#     def __init__(self,riderName,bikeName):
-#         self.bikeName = bikeName
-#         self.riderName = riderName
-
-
-# class Trek(Bike):
-#     def __init__(self,riderName,bikeName):
-#         super().__init__(riderName,bikeName)
-#     def bikeRating(self):
-#         print(f'Hello {self.riderName}')
-#         print (f"Oh you have a Trek {self.bikeName}! Lets see if its cool {self.riderName}..")
-#         if self.bikeName.upper() == 'ROSCO':
-#             return (f"Your Bike Sucks {self.riderName}! Time to Upgrade!\n")
-#         if self.bikeName.upper() == 'SLASH':
-#             return (f"Your Bike Is Sick {self.riderName}! Keep Ripping!\n")
-#         return (f"Your Bike Wasn't Found It Must Suck {self.riderName}! Time to Upgrade!\n")
-
-
-
-# toms_bike = Trek('Tom','Rosco')
-# tims_bike = Trek('Tim','Slash')
-# bike_rating = BikeRating()
-# bike_rating.bikeRating([toms_bike,tims_bike])
 bikes = {
 'TREK':{
 'bad': ['Roscoe 8',
@@ -72,7 +40,7 @@ class BikeRating:
         for bike in bike:
             print(f'{bike.bikeRating()}')
 
-class Bike:
+class Bike():
     wheels = 'two'
     def __init__(self,bikeBrand, bikeName):
         self.bikeBrand = bikeBrand
@@ -88,6 +56,7 @@ class CreateBiker(Bike):
     def bikeRating(self):
         print(f'Hello {self.riderName}')
         print (f"Oh you have a {self}! Lets see if its cool {self.riderName}..")
+            # converting bike name to upper and list to upper so everything is the same when compared
         if self.bikeName.upper() in (x.upper() for x in bikes[self.bikeBrand.upper()]['bad']):
             return (f"Your Bike Sucks {self.riderName}! Time to Upgrade!\n")
         if self.bikeName.upper() in (x.upper() for x in bikes[self.bikeBrand.upper()]['good']):
@@ -98,4 +67,36 @@ toms_bike = CreateBiker('Tom','Trek','Marlin 5')
 tims_bike = CreateBiker('Tim','Marin','Alcatraz')
 BikeRating().run([toms_bike, tims_bike])
 
+#Start
+# class BikeRating:
+#     def bikeRating(self,bike):
+#         print('Rating Bikes')
+#         print('===================')     
+#         for bike in bike:
+#             print(f'{bike.bikeRating()}')
 
+# class Bike:
+#     wheels = 'two'
+#     def __init__(self,riderName,bikeName):
+#         self.bikeName = bikeName
+#         self.riderName = riderName
+
+
+# class Trek(Bike):
+#     def __init__(self,riderName,bikeName):
+#         super().__init__(riderName,bikeName)
+#     def bikeRating(self):
+#         print(f'Hello {self.riderName}')
+#         print (f"Oh you have a Trek {self.bikeName}! Lets see if its cool {self.riderName}..")
+#         if self.bikeName.upper() == 'ROSCO':
+#             return (f"Your Bike Sucks {self.riderName}! Time to Upgrade!\n")
+#         if self.bikeName.upper() == 'SLASH':
+#             return (f"Your Bike Is Sick {self.riderName}! Keep Ripping!\n")
+#         return (f"Your Bike Wasn't Found It Must Suck {self.riderName}! Time to Upgrade!\n")
+
+
+
+# toms_bike = Trek('Tom','Rosco')
+# tims_bike = Trek('Tim','Slash')
+# bike_rating = BikeRating()
+# bike_rating.bikeRating([toms_bike,tims_bike])
